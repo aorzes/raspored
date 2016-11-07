@@ -96,10 +96,6 @@
         //add code here for when you hit delete
         deleteSomething = YES;
         NSString *dat = [_pageData objectAtIndex:indexPath.row];
-//        int d = (int)[[dat componentsSeparatedByString:@"."][0] integerValue];
-//        int m = (int)[[dat componentsSeparatedByString:@"."][1] integerValue];
-//        int y = (int)[[dat componentsSeparatedByString:@"."][2] integerValue];
-//        dat = [NSString stringWithFormat:@"%d.%02d.%02d.",y,m,d];
         const char *dbpath = [databasePath UTF8String];
         sqlite3_stmt    *statement;
         if (sqlite3_open(dbpath, &zapisi) == SQLITE_OK) {
