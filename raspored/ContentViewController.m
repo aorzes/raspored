@@ -96,26 +96,31 @@
         //add code here for when you hit delete
         deleteSomething = YES;
         NSString *dat = [_pageData objectAtIndex:indexPath.row];
+//        int d = (int)[[dat componentsSeparatedByString:@"."][0] integerValue];
+//        int m = (int)[[dat componentsSeparatedByString:@"."][1] integerValue];
+//        int y = (int)[[dat componentsSeparatedByString:@"."][2] integerValue];
+//        dat = [NSString stringWithFormat:@"%d.%02d.%02d.",y,m,d];
         const char *dbpath = [databasePath UTF8String];
         sqlite3_stmt    *statement;
         if (sqlite3_open(dbpath, &zapisi) == SQLITE_OK) {
             NSString *querySQL =[NSString stringWithFormat: @"DELETE FROM biljeske WHERE datum=\"%@\"",dat];
             const char *query_stmt = [querySQL UTF8String];
-            if (sqlite3_prepare_v2(zapisi, query_stmt, -1, &statement, NULL) == SQLITE_OK) {
+            sqlite3_prepare_v2(zapisi, query_stmt,-1, &statement, NULL);
+            if (sqlite3_step(statement) == SQLITE_DONE) {
                 NSLog(@"record deleted");
-                //array delete
+                //array for delete
                 NSMutableArray *delDate = [NSMutableArray arrayWithArray:_pageData];
                 NSMutableArray *delRec = [NSMutableArray arrayWithArray:_pageTekst];
                 [delDate removeObjectAtIndex:indexPath.row];
                 [delRec removeObjectAtIndex:indexPath.row];
                 _pageData = delDate;
                 _pageTekst = delRec;
-                [_tablica reloadData];
+                
             }
             sqlite3_finalize(statement);
             sqlite3_close(zapisi);
         }
-        
+        [_tablica reloadData];
     }
 }
 

@@ -59,8 +59,7 @@
     NSDateComponents *components = [[NSCalendar currentCalendar] components:NSCalendarUnitDay | NSCalendarUnitMonth | NSCalendarUnitYear fromDate:now];
     nowDay = (int)[components day];
     nowMonth = (int)[components month];
-    [self openBase];
-    [self ucitaj];
+    
 }
 
 - (UIStatusBarStyle) preferredStatusBarStyle {
@@ -68,6 +67,8 @@
 }
 
 -(void)viewDidAppear:(BOOL)animated{
+    [self openBase];
+    [self ucitaj];
     NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
     NSData *colorData = [prefs dataForKey:@"colorDay"];
     colorExist = NO; // je li ucitana boja dana - praznici
