@@ -7,15 +7,64 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EC183C981D8D4D9A005D0E63 /* Clock.m in Sources */ = {isa = PBXBuildFile; fileRef = EC183C971D8D4D9A005D0E63 /* Clock.m */; };
+		EC183C9B1D8DE97B005D0E63 /* MultipeerConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC183C9A1D8DE97B005D0E63 /* MultipeerConnectivity.framework */; };
+		EC183C9E1D8DE9D6005D0E63 /* ConectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = EC183C9D1D8DE9D6005D0E63 /* ConectionView.m */; };
+		EC183CA11D8DFECA005D0E63 /* MCMenager.m in Sources */ = {isa = PBXBuildFile; fileRef = EC183CA01D8DFECA005D0E63 /* MCMenager.m */; };
+		EC3923161DAD950800795739 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC3923151DAD950800795739 /* MessageUI.framework */; };
+		EC39DAC11DB0C1F700223F80 /* blueDesk.png in Resources */ = {isa = PBXBuildFile; fileRef = EC39DAC01DB0C1F700223F80 /* blueDesk.png */; };
+		EC3D0C071D95CFA900B80796 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = EC3D0C091D95CFA900B80796 /* Localizable.strings */; };
+		EC4E39551DCE31EB00C83DBA /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = EC4E39541DCE31EB00C83DBA /* libsqlite3.tbd */; };
+		EC4E39581DCE877100C83DBA /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC4E39571DCE877100C83DBA /* RootViewController.m */; };
+		EC4E395D1DCE889F00C83DBA /* DataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC4E395A1DCE889F00C83DBA /* DataViewController.m */; };
+		EC4E395E1DCE889F00C83DBA /* ModelController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC4E395C1DCE889F00C83DBA /* ModelController.m */; };
+		EC4E39631DCE916100C83DBA /* ContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC4E39601DCE916100C83DBA /* ContentViewController.m */; };
+		EC4E39641DCE916100C83DBA /* ContentTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EC4E39621DCE916100C83DBA /* ContentTableViewCell.m */; };
+		EC4FE83F1DC8B97900806915 /* FreeDayCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EC4FE83E1DC8B97900806915 /* FreeDayCell.m */; };
 		EC52257D1D22946100EF7B52 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EC52257C1D22946100EF7B52 /* main.m */; };
 		EC5225801D22946100EF7B52 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EC52257F1D22946100EF7B52 /* AppDelegate.m */; };
 		EC5225831D22946100EF7B52 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC5225821D22946100EF7B52 /* ViewController.m */; };
 		EC5225861D22946100EF7B52 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC5225841D22946100EF7B52 /* Main.storyboard */; };
 		EC5225881D22946100EF7B52 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC5225871D22946100EF7B52 /* Assets.xcassets */; };
 		EC52258B1D22946100EF7B52 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC5225891D22946100EF7B52 /* LaunchScreen.storyboard */; };
+		EC543D191DAC2B75002D342C /* DigitalClock.m in Sources */ = {isa = PBXBuildFile; fileRef = EC543D181DAC2B75002D342C /* DigitalClock.m */; };
+		EC57C0FD1DC778530094C5EF /* KalendarController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC57C0FC1DC778530094C5EF /* KalendarController.m */; };
+		EC57C1001DC7AA670094C5EF /* KalendarCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EC57C0FF1DC7AA670094C5EF /* KalendarCell.m */; };
+		EC57C1031DC7D3B40094C5EF /* FreeDaysController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC57C1021DC7D3B40094C5EF /* FreeDaysController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EC183C961D8D4D9A005D0E63 /* Clock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Clock.h; sourceTree = "<group>"; };
+		EC183C971D8D4D9A005D0E63 /* Clock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Clock.m; sourceTree = "<group>"; };
+		EC183C9A1D8DE97B005D0E63 /* MultipeerConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MultipeerConnectivity.framework; path = System/Library/Frameworks/MultipeerConnectivity.framework; sourceTree = SDKROOT; };
+		EC183C9C1D8DE9D6005D0E63 /* ConectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConectionView.h; sourceTree = "<group>"; };
+		EC183C9D1D8DE9D6005D0E63 /* ConectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConectionView.m; sourceTree = "<group>"; };
+		EC183C9F1D8DFECA005D0E63 /* MCMenager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCMenager.h; sourceTree = "<group>"; };
+		EC183CA01D8DFECA005D0E63 /* MCMenager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCMenager.m; sourceTree = "<group>"; };
+		EC23F15F1D9BA3B00007CA53 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		EC38D95B1D965E74005C45B2 /* sr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sr; path = sr.lproj/Main.strings; sourceTree = "<group>"; };
+		EC38D95C1D965E74005C45B2 /* sr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sr; path = sr.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		EC38D95D1D965E74005C45B2 /* sr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sr; path = sr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		EC3923151DAD950800795739 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		EC39DAC01DB0C1F700223F80 /* blueDesk.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blueDesk.png; sourceTree = "<group>"; };
+		EC3D0BF71D95B96F00B80796 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		EC3D0C051D95CEFB00B80796 /* hr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hr; path = hr.lproj/Main.strings; sourceTree = "<group>"; };
+		EC3D0C061D95CEFC00B80796 /* hr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hr; path = hr.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		EC3D0C081D95CFA900B80796 /* hr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hr; path = hr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		EC3D0C0A1D95CFC300B80796 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		EC4E39541DCE31EB00C83DBA /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		EC4E39561DCE877100C83DBA /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		EC4E39571DCE877100C83DBA /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		EC4E39591DCE889F00C83DBA /* DataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataViewController.h; sourceTree = "<group>"; };
+		EC4E395A1DCE889F00C83DBA /* DataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataViewController.m; sourceTree = "<group>"; };
+		EC4E395B1DCE889F00C83DBA /* ModelController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModelController.h; sourceTree = "<group>"; };
+		EC4E395C1DCE889F00C83DBA /* ModelController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModelController.m; sourceTree = "<group>"; };
+		EC4E395F1DCE916100C83DBA /* ContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContentViewController.h; sourceTree = "<group>"; };
+		EC4E39601DCE916100C83DBA /* ContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContentViewController.m; sourceTree = "<group>"; };
+		EC4E39611DCE916100C83DBA /* ContentTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContentTableViewCell.h; sourceTree = "<group>"; };
+		EC4E39621DCE916100C83DBA /* ContentTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContentTableViewCell.m; sourceTree = "<group>"; };
+		EC4FE83D1DC8B97900806915 /* FreeDayCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FreeDayCell.h; sourceTree = "<group>"; };
+		EC4FE83E1DC8B97900806915 /* FreeDayCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FreeDayCell.m; sourceTree = "<group>"; };
 		EC5225781D22946100EF7B52 /* raspored.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = raspored.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC52257C1D22946100EF7B52 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EC52257E1D22946100EF7B52 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -26,6 +75,14 @@
 		EC5225871D22946100EF7B52 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EC52258A1D22946100EF7B52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EC52258C1D22946100EF7B52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC543D171DAC2B75002D342C /* DigitalClock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DigitalClock.h; sourceTree = "<group>"; };
+		EC543D181DAC2B75002D342C /* DigitalClock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DigitalClock.m; sourceTree = "<group>"; };
+		EC57C0FB1DC778530094C5EF /* KalendarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KalendarController.h; sourceTree = "<group>"; };
+		EC57C0FC1DC778530094C5EF /* KalendarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KalendarController.m; sourceTree = "<group>"; };
+		EC57C0FE1DC7AA670094C5EF /* KalendarCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KalendarCell.h; sourceTree = "<group>"; };
+		EC57C0FF1DC7AA670094C5EF /* KalendarCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KalendarCell.m; sourceTree = "<group>"; };
+		EC57C1011DC7D3B40094C5EF /* FreeDaysController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FreeDaysController.h; sourceTree = "<group>"; };
+		EC57C1021DC7D3B40094C5EF /* FreeDaysController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FreeDaysController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +90,32 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC4E39551DCE31EB00C83DBA /* libsqlite3.tbd in Frameworks */,
+				EC3923161DAD950800795739 /* MessageUI.framework in Frameworks */,
+				EC183C9B1D8DE97B005D0E63 /* MultipeerConnectivity.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EC183C991D8DE97B005D0E63 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EC4E39541DCE31EB00C83DBA /* libsqlite3.tbd */,
+				EC3923151DAD950800795739 /* MessageUI.framework */,
+				EC183C9A1D8DE97B005D0E63 /* MultipeerConnectivity.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		EC52256F1D22946100EF7B52 = {
 			isa = PBXGroup;
 			children = (
+				EC39DAC01DB0C1F700223F80 /* blueDesk.png */,
 				EC52257A1D22946100EF7B52 /* raspored */,
 				EC5225791D22946100EF7B52 /* Products */,
+				EC183C991D8DE97B005D0E63 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,8 +132,34 @@
 			children = (
 				EC52257E1D22946100EF7B52 /* AppDelegate.h */,
 				EC52257F1D22946100EF7B52 /* AppDelegate.m */,
+				EC183C9C1D8DE9D6005D0E63 /* ConectionView.h */,
+				EC183C9D1D8DE9D6005D0E63 /* ConectionView.m */,
+				EC183C9F1D8DFECA005D0E63 /* MCMenager.h */,
+				EC183CA01D8DFECA005D0E63 /* MCMenager.m */,
+				EC183C961D8D4D9A005D0E63 /* Clock.h */,
+				EC183C971D8D4D9A005D0E63 /* Clock.m */,
+				EC543D171DAC2B75002D342C /* DigitalClock.h */,
+				EC543D181DAC2B75002D342C /* DigitalClock.m */,
 				EC5225811D22946100EF7B52 /* ViewController.h */,
 				EC5225821D22946100EF7B52 /* ViewController.m */,
+				EC57C0FB1DC778530094C5EF /* KalendarController.h */,
+				EC57C0FC1DC778530094C5EF /* KalendarController.m */,
+				EC57C0FE1DC7AA670094C5EF /* KalendarCell.h */,
+				EC57C0FF1DC7AA670094C5EF /* KalendarCell.m */,
+				EC57C1011DC7D3B40094C5EF /* FreeDaysController.h */,
+				EC57C1021DC7D3B40094C5EF /* FreeDaysController.m */,
+				EC4FE83D1DC8B97900806915 /* FreeDayCell.h */,
+				EC4FE83E1DC8B97900806915 /* FreeDayCell.m */,
+				EC4E39561DCE877100C83DBA /* RootViewController.h */,
+				EC4E39571DCE877100C83DBA /* RootViewController.m */,
+				EC4E39591DCE889F00C83DBA /* DataViewController.h */,
+				EC4E395A1DCE889F00C83DBA /* DataViewController.m */,
+				EC4E395B1DCE889F00C83DBA /* ModelController.h */,
+				EC4E395C1DCE889F00C83DBA /* ModelController.m */,
+				EC4E395F1DCE916100C83DBA /* ContentViewController.h */,
+				EC4E39601DCE916100C83DBA /* ContentViewController.m */,
+				EC4E39611DCE916100C83DBA /* ContentTableViewCell.h */,
+				EC4E39621DCE916100C83DBA /* ContentTableViewCell.m */,
 				EC5225841D22946100EF7B52 /* Main.storyboard */,
 				EC5225871D22946100EF7B52 /* Assets.xcassets */,
 				EC5225891D22946100EF7B52 /* LaunchScreen.storyboard */,
@@ -75,6 +173,7 @@
 			isa = PBXGroup;
 			children = (
 				EC52257C1D22946100EF7B52 /* main.m */,
+				EC3D0C091D95CFA900B80796 /* Localizable.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -105,11 +204,12 @@
 		EC5225701D22946100EF7B52 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "Anton Orzes";
 				TargetAttributes = {
 					EC5225771D22946100EF7B52 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 8Z7M987K48;
 					};
 				};
 			};
@@ -120,6 +220,7 @@
 			knownRegions = (
 				en,
 				Base,
+				sr,
 			);
 			mainGroup = EC52256F1D22946100EF7B52;
 			productRefGroup = EC5225791D22946100EF7B52 /* Products */;
@@ -136,7 +237,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC39DAC11DB0C1F700223F80 /* blueDesk.png in Resources */,
 				EC52258B1D22946100EF7B52 /* LaunchScreen.storyboard in Resources */,
+				EC3D0C071D95CFA900B80796 /* Localizable.strings in Resources */,
 				EC5225881D22946100EF7B52 /* Assets.xcassets in Resources */,
 				EC5225861D22946100EF7B52 /* Main.storyboard in Resources */,
 			);
@@ -149,19 +252,46 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC57C1001DC7AA670094C5EF /* KalendarCell.m in Sources */,
 				EC5225831D22946100EF7B52 /* ViewController.m in Sources */,
+				EC4E39581DCE877100C83DBA /* RootViewController.m in Sources */,
+				EC4FE83F1DC8B97900806915 /* FreeDayCell.m in Sources */,
+				EC4E395D1DCE889F00C83DBA /* DataViewController.m in Sources */,
+				EC183CA11D8DFECA005D0E63 /* MCMenager.m in Sources */,
 				EC5225801D22946100EF7B52 /* AppDelegate.m in Sources */,
+				EC4E395E1DCE889F00C83DBA /* ModelController.m in Sources */,
+				EC183C981D8D4D9A005D0E63 /* Clock.m in Sources */,
+				EC183C9E1D8DE9D6005D0E63 /* ConectionView.m in Sources */,
+				EC57C1031DC7D3B40094C5EF /* FreeDaysController.m in Sources */,
+				EC4E39631DCE916100C83DBA /* ContentViewController.m in Sources */,
+				EC57C0FD1DC778530094C5EF /* KalendarController.m in Sources */,
+				EC543D191DAC2B75002D342C /* DigitalClock.m in Sources */,
 				EC52257D1D22946100EF7B52 /* main.m in Sources */,
+				EC4E39641DCE916100C83DBA /* ContentTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		EC3D0C091D95CFA900B80796 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EC3D0C081D95CFA900B80796 /* hr */,
+				EC3D0C0A1D95CFC300B80796 /* en */,
+				EC38D95D1D965E74005C45B2 /* sr */,
+				EC23F15F1D9BA3B00007CA53 /* Base */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		EC5225841D22946100EF7B52 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				EC5225851D22946100EF7B52 /* Base */,
+				EC3D0BF71D95B96F00B80796 /* en */,
+				EC3D0C051D95CEFB00B80796 /* hr */,
+				EC38D95B1D965E74005C45B2 /* sr */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -170,6 +300,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				EC52258A1D22946100EF7B52 /* Base */,
+				EC3D0C061D95CEFC00B80796 /* hr */,
+				EC38D95C1D965E74005C45B2 /* sr */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -181,6 +313,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -191,8 +324,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -225,6 +360,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -235,8 +371,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -263,7 +401,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8Z7M987K48;
 				INFOPLIST_FILE = raspored/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = orzes.raspored;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -274,7 +414,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8Z7M987K48;
 				INFOPLIST_FILE = raspored/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = orzes.raspored;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -300,6 +442,7 @@
 				EC5225911D22946100EF7B52 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

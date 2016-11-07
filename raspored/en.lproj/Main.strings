@@ -1,0 +1,51 @@
+
+/* Class = "UIButton"; normalTitle = "Pošalji podatke"; ObjectID = "3aG-JI-1at"; */
+"3aG-JI-1at.normalTitle" = "Send data";
+
+/* Class = "UIButton"; normalTitle = "Resetiraj sliku"; ObjectID = "3iT-uF-5yv"; */
+"3iT-uF-5yv.normalTitle" = "Reset picture";
+
+/* Class = "UITextField"; placeholder = "20"; ObjectID = "3sj-SO-jLv"; */
+"3sj-SO-jLv.placeholder" = "20";
+
+/* Class = "UILabel"; text = "Pošalji raspored:"; ObjectID = "8P6-Sh-p7T"; */
+"8P6-Sh-p7T.text" = "Send schedule:";
+
+/* Class = "UIButton"; normalTitle = "Pretraži mrežu"; ObjectID = "9ig-AS-0Rl"; */
+"9ig-AS-0Rl.normalTitle" = "Search network";
+
+/* Class = "UITextField"; placeholder = "2 sata"; ObjectID = "KyC-8Z-KSc"; */
+"KyC-8Z-KSc.placeholder" = "2 lessons";
+
+/* Class = "UITextField"; placeholder = "nema"; ObjectID = "N2p-pf-INP"; */
+"N2p-pf-INP.placeholder" = "no";
+
+/* Class = "UILabel"; text = "Moje ime:"; ObjectID = "Z8h-90-Al2"; */
+"Z8h-90-Al2.text" = "My name:";
+
+/* Class = "UILabel"; text = "Duljina velikog odmora:"; ObjectID = "ZwR-X9-7QJ"; */
+"ZwR-X9-7QJ.text" = "The length of the break:";
+
+/* Class = "UIButton"; normalTitle = "Nazad"; ObjectID = "abh-eA-1Kw"; */
+"abh-eA-1Kw.normalTitle" = "Back";
+
+/* Class = "UITextField"; placeholder = "Ime vidljivo ostalima"; ObjectID = "eY5-73-Su3"; */
+"eY5-73-Su3.placeholder" = "Name visible to others";
+
+/* Class = "UILabel"; text = "Trajanje sata:"; ObjectID = "iw3-lc-QAr"; */
+"iw3-lc-QAr.text" = "The duration of lesson:";
+
+/* Class = "UILabel"; text = "Početak:"; ObjectID = "mRV-JT-k4M"; */
+"mRV-JT-k4M.text" = "Start:";
+
+/* Class = "UITextField"; placeholder = "45"; ObjectID = "qV0-D6-St5"; */
+"qV0-D6-St5.placeholder" = "45";
+
+/* Class = "UILabel"; text = "Vidljiv u mreži da/ne:"; ObjectID = "qa9-6k-2Jk"; */
+"qa9-6k-2Jk.text" = "Visible in the network:";
+
+/* Class = "UILabel"; text = "Veliki odmor poslije:"; ObjectID = "sWz-no-8wj"; */
+"sWz-no-8wj.text" = "Big break after:";
+
+/* Class = "UILabel"; text = "Drugi veliki odmor poslije:"; ObjectID = "xiL-pE-xDI"; */
+"xiL-pE-xDI.text" = "Second big break after:";

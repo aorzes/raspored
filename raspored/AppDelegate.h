@@ -7,11 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MCMenager.h"
+
+@protocol SaveProtocol
+-(void) saveOnClosing;//metode koje su u drugoj klasi
+@end
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
-
+@property (strong, nonatomic) MCMenager *mcManager;
+@property (weak, nonatomic) id <SaveProtocol> saveDelegate;
 
 @end
 
