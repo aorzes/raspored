@@ -137,49 +137,13 @@
 }
 
 
-//- (void)tableView:(UITableView *)tableView accessoryButtonTappedForRowWithIndexPath:(nonnull NSIndexPath *)indexPath {
-//    FreeDayCell* cellCheck = [tableView cellForRowAtIndexPath:indexPath];
-//    BOOL weekColor = [[colorDay objectAtIndex:indexPath.row] boolValue];
-//    if (weekColor) {
-//        [colorDay replaceObjectAtIndex:indexPath.row withObject:@NO];
-//        cellCheck.dateLabel.textColor = [UIColor blackColor];
-//    }else {
-//        [colorDay replaceObjectAtIndex:indexPath.row withObject:@YES];
-//        cellCheck.dateLabel.textColor = [UIColor redColor];
-//    }
-//    NSLog(@"%li",indexPath.row);
-//}
-
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return calendarDeys.count;
 }
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
-    return @"Praznici";
+    return NSLocalizedString(@"Holidays", nil);
 }
-
-//- (IBAction)setStartDate:(id)sender {
-//    NSLog(@"%@",_mainPicker.date);
-//    NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
-//    NSData *theDate=[NSKeyedArchiver archivedDataWithRootObject:_mainPicker.date];
-//    [prefs setObject:theDate forKey:@"startDay"];
-//    [prefs synchronize];
-//    oldRemark = remarkArr;
-//    oldColor = colorDay;
-//    NSTimeInterval diference = [_mainPicker.date timeIntervalSinceDate:oldDate]/86400;
-//    NSLog(@"diference: %f",diference);
-//    [self makeCalendarDays];
-//    for (int i=0; i<oldColor.count; i++) {
-//        int replaceIndex = i-diference;
-//        if(replaceIndex>=0 && replaceIndex<colorDay.count){
-//            [colorDay replaceObjectAtIndex:replaceIndex withObject:[oldColor objectAtIndex:i]];
-//            [remarkArr replaceObjectAtIndex:replaceIndex withObject:[oldRemark objectAtIndex:i]];
-//        }
-//    }
-//    oldDate = _mainPicker.date;
-//    [_tablica reloadData];
-//}
-
 
 #pragma mark - Navigation
 

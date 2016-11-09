@@ -1,0 +1,25 @@
+/* 
+  Localizable.strings
+  raspored
+
+  Created by Anton Orzes on 23/09/2016.
+  Copyright © 2016 Anton Orzes. All rights reserved.
+*/
+"Slika title" = "Image";
+"Obrisi title" = "Delete";
+"Postavke title" = "Setings";
+"Info title" = "Info";
+"Trajanje title" = "Duration";
+"Slanje title" = "Sending data";
+"Poslani title" = "Data sended!";
+"Novi title" = "New!";
+"Novi message" = "New message?";
+"Prihvati title" = "Accept data";
+"Odbaci title" = "Reject";
+"Brisanje title" = "Delete";
+"Brisanje cijelog rasporeda?" = "Delete all schedule?";
+"Kalendar" = "Calendar";
+"Nazad" = "Back";
+"Record" = "Record";
+"Školska godina" = "School year";
+"Holidays" = "Holidays";

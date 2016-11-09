@@ -851,7 +851,7 @@
         <image name="blueDesk.png" width="414" height="736"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="rEj-JW-gmU"/>
         <segue reference="0hh-bP-4sF"/>
+        <segue reference="7Ia-dA-nZs"/>
     </inferredMetricsTieBreakers>
 </document>

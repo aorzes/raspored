@@ -67,6 +67,9 @@
     }
 }
 
+- (UIStatusBarStyle) preferredStatusBarStyle {
+    return UIStatusBarStyleLightContent;
+}
 
 - (IBAction)sendMessage:(id)sender {
     [self sendMyMessage];
