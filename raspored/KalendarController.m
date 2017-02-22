@@ -137,7 +137,7 @@
     NSCalendar *calendar = [NSCalendar currentCalendar];
     NSDate *date = [calendar dateFromComponents:comps];
     NSInteger weekday = [calendar component:NSCalendarUnitWeekday fromDate:date]-1;
-    NSLog(@"%d.%d. weekday:%ld",monthD,yearD,(long)weekday);
+    //NSLog(@"%d.%d. weekday:%ld",monthD,yearD,(long)weekday);
     NSRange lastDay = [calendar rangeOfUnit:NSCalendarUnitDay inUnit:NSCalendarUnitMonth forDate:date];
     UIView *daysView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 250)];
     //daysView.backgroundColor = [UIColor whiteColor];
@@ -257,7 +257,7 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSLog(@"tip %ld",(long)indexPath.row);
+    //NSLog(@"tip %ld",(long)indexPath.row);
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -287,7 +287,7 @@
 - (void)workWeekSelect:(UIButton *)sender {
     int n=0;
     int wIndex = 0;
-    NSLog(@"work week: %f",sender.center.y);
+    //NSLog(@"work week: %f",sender.center.y);
     if ((int)[sender.titleLabel.text integerValue]==0) {
         [sender setTitle:[NSString stringWithFormat:@"%d",1] forState:UIControlStateNormal];
     } else {
@@ -377,11 +377,11 @@
         year++;
     }
     NSString *dateString = [NSString stringWithFormat:@"%ld.%02ld.%02ld.",year, monthl, day];
-    NSLog(@"weekday: %ld",[self weekInt:day month:monthl year:year]);
+    //NSLog(@"weekday: %ld",[self weekInt:day month:monthl year:year]);
     //_dataLabel.text = dateString;
     NSInteger anIndex = 0; //stranica koja ce se otvoriti
-    NSLog(@"INDEX: %ld",(long)anIndex);
-    NSLog(@"-----");
+    //NSLog(@"INDEX: %ld",(long)anIndex);
+    //NSLog(@"-----");
     if (![someDate containsObject: dateString]){
         [someDate addObject:dateString];
         [self saveData:dateString];
@@ -390,11 +390,11 @@
         NSArray *someArray = [someDate sortedArrayUsingDescriptors: [NSArray arrayWithObject: sortOrder]];
         anIndex=[someArray indexOfObject:dateString];
         for (int i=0; i<someArray.count; i++) {
-            NSDate *d = [someArray objectAtIndex:i];
-            NSLog(@"%@",d);
+            //NSDate *d = [someArray objectAtIndex:i];
+            //NSLog(@"%@",d);
         }
     } else {
-        NSLog(@"to ima");
+        //NSLog(@"to ima");
         anIndex=[someDate indexOfObject:dateString];
         
     }
