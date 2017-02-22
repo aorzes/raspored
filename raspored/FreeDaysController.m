@@ -58,6 +58,7 @@
         array = [NSKeyedUnarchiver unarchiveObjectWithData:remakData];
         remarkArr = [NSMutableArray arrayWithArray:array];
     }
+    
 }
 
 - (UIStatusBarStyle) preferredStatusBarStyle {
@@ -95,6 +96,7 @@
         startDate = [[NSCalendar currentCalendar] dateFromComponents:components];
     }
 }
+
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     FreeDayCell *cell = [tableView dequeueReusableCellWithIdentifier:@"FreeDay"];

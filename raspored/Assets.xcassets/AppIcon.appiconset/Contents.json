@@ -3,49 +3,49 @@
     {
       "size" : "20x20",
       "idiom" : "iphone",
-      "filename" : "zvono40.png",
+      "filename" : "zvono240.png",
       "scale" : "2x"
     },
     {
       "size" : "20x20",
       "idiom" : "iphone",
-      "filename" : "zvono60.png",
+      "filename" : "zvono260.png",
       "scale" : "3x"
     },
     {
       "size" : "29x29",
       "idiom" : "iphone",
-      "filename" : "zvono58.png",
+      "filename" : "zvono258.png",
       "scale" : "2x"
     },
     {
       "size" : "29x29",
       "idiom" : "iphone",
-      "filename" : "zvono87.png",
+      "filename" : "zvono287.png",
       "scale" : "3x"
     },
     {
       "size" : "40x40",
       "idiom" : "iphone",
-      "filename" : "zvono80.png",
+      "filename" : "zvono280.png",
       "scale" : "2x"
     },
     {
       "size" : "40x40",
       "idiom" : "iphone",
-      "filename" : "zvono120.png",
+      "filename" : "zvono2120.png",
       "scale" : "3x"
     },
     {
       "size" : "60x60",
       "idiom" : "iphone",
-      "filename" : "zvono120-1.png",
+      "filename" : "zvono2120-1.png",
       "scale" : "2x"
     },
     {
       "size" : "60x60",
       "idiom" : "iphone",
-      "filename" : "zvono180.png",
+      "filename" : "zvono2180.png",
       "scale" : "3x"
     }
   ],

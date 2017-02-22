@@ -199,6 +199,7 @@
             tPositionX += lWidth+2;
         }
     }
+    [baseView bringSubviewToFront:redDot];
     
 //tipka za sliku podloge
     CGRect selectImageFrame = CGRectMake(5, mainSize.height-50, (mainSize.width-10)/4, 40);
@@ -337,25 +338,28 @@
     NSDate *now = [NSDate date];
     NSCalendar *calendar = [NSCalendar currentCalendar];
     NSDateComponents *components = [calendar components:
-                                    (NSCalendarUnitHour | NSCalendarUnitMinute)
+                                    (NSCalendarUnitWeekday | NSCalendarUnitHour | NSCalendarUnitMinute)
                                     fromDate:now];
     NSInteger hour = components.hour;
     NSInteger minute = components.minute;
+    NSInteger weekday = components.weekday-1;
     
     float localTime = ((hour*60+minute));//-(_statHour*60+_startMinute));
     redDotY = 0;
     redDot.center = CGPointMake(25, redDotY);
-    for (int i=0; i<lessons; i++) {
+    
+    for (int i=0; i<lessons; i++) { //od prvog do 7. sata
         if (localTime>= [periodTime[i][0] floatValue] && localTime< [periodTime[i][1] floatValue]) {
-            redDot.layer.backgroundColor = [UIColor redColor].CGColor;
-            redDotY = (i+1)*40 + ((localTime-[periodTime[i][0] intValue])/45)*40;
+            redDot.layer.backgroundColor = [UIColor redColor].CGColor; //trajanje sata
+            redDotY = (i+1)*40 + ((localTime-[periodTime[i][0] floatValue])/_lessonLength)*40;
             //NSLog(@"%f",(localTime-[periodTime[i][0] intValue])/45);
-            redDot.center = CGPointMake(25, redDotY);
+            redDot.center = CGPointMake(20 + (lWidth+2) * weekday, redDotY);
             break;
         } else if (i<lessons-1 && localTime > [periodTime[i][1] floatValue] && localTime< [periodTime[i+1][0] floatValue]) {
-            redDot.layer.backgroundColor = [UIColor greenColor].CGColor;
+            redDot.layer.backgroundColor = [UIColor greenColor].CGColor; // odmor
             redDotY = (i+2)*40;
-            redDot.center = CGPointMake(25, redDotY);
+            redDot.center = CGPointMake(20 + (lWidth+2) * weekday, redDotY);
+            redDot.center = CGPointMake(20 , redDotY);
             break;
         }
     }
@@ -600,7 +604,6 @@
                 NSLog(@"nil");
             }
             NSLog(@"%@",s);
-            
             txt.text = s;
             UIColor *bc = [NSKeyedUnarchiver unarchiveObjectWithData:bcData];
             if (bc==nil) {

@@ -36,10 +36,30 @@
     self.dataLabel.text = [NSString stringWithFormat:@"%@.%@.%@.",d,m,y];
     self.dataText.text = [self.tekstObject description];
     sDate = [self.dataObject description];
+    //koji je dan u tjednu
+    NSDateComponents *comps = [[NSDateComponents alloc] init];
+    [comps setDay:[d integerValue]];
+    [comps setMonth:[m integerValue]];
+    [comps setYear:[y integerValue]];
+    NSCalendar *calendar = [NSCalendar currentCalendar];
+    NSDate *date = [calendar dateFromComponents:comps];
+    long wday = [calendar component:NSCalendarUnitWeekday fromDate:date]-2;
+    NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
+    NSString *s = @"";
+    for (long i=wday*7+1; i<wday*7+8; i++) {
+        NSString *us = [prefs stringForKey:[NSString stringWithFormat:@"p%ld",i]];
+        if (us.length>0) {
+            s = [s stringByAppendingString:[NSString stringWithFormat:@"%@:\n",us]];
+        }
+    }
+    NSString *ts = [self.tekstObject description];
+    if (ts.length==0) {
+        self.dataText.text = s;
+    }
 }
 
 - (IBAction)saveData:(id)sender {
-    NSLog(@"To je save");
+    //NSLog(@"To je save");
     [self.dataText resignFirstResponder];
     NSArray *dirPaths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
     NSString *docsDir = [dirPaths objectAtIndex:0];

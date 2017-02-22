@@ -129,7 +129,7 @@
         x += pixelSize * 3 + 2;
         y=50;
         for (int j=1; j<=15; j++) {
-            CGRect rect = CGRectMake(x, y, 5, 10);
+            CGRect rect = CGRectMake(x, y, 6, 11);
             UIImageView * imageRect = [[UIImageView alloc]initWithFrame:rect];
             imageRect.backgroundColor = [UIColor clearColor];
             imageRect.tag = n++;

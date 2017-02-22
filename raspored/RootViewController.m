@@ -9,7 +9,7 @@
 #import "RootViewController.h"
 #import "ModelController.h"
 #import "DataViewController.h"
-
+//ovo lista stranice zapisa
 @interface RootViewController ()
 
 @property (readonly, strong, nonatomic) ModelController *modelController;

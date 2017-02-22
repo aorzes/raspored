@@ -59,7 +59,7 @@
     _pageTekst = rTekst;
 }
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     ContentTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"MyCell" forIndexPath:indexPath];
     NSString *dat = [_pageData objectAtIndex:indexPath.row];
     int y = (int)[[dat componentsSeparatedByString:@"."][0] integerValue];

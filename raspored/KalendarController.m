@@ -66,7 +66,7 @@
     return UIStatusBarStyleLightContent;
 }
 
--(void)viewDidAppear:(BOOL)animated{
+-(void)viewDidAppear:(BOOL)animated {
     [self openBase];
     [self ucitaj];
     NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
@@ -79,6 +79,7 @@
     }
     dayNum = 0;
     [self makeKalendar];
+    
 }
 
 - (void)makeKalendar {
@@ -116,6 +117,12 @@
         [monthViewArr addObject:[self makeDaysLabel:i+1 year:startYearInt+1]];
     }
     [tablica reloadData];
+    //scroll to month
+    CGFloat needScroll = nowMonth - 9;
+    if (needScroll<0) {
+        needScroll += 12;
+    }
+    [tablica setContentOffset:CGPointMake(0, 230 * needScroll)];//scrolaj za po 230 za svaki mjesec
 }
 
 - (UIView *)makeDaysLabel:(int)monthD year:(int)yearD {
@@ -344,6 +351,7 @@
 }
 
 - (void)saveData:(NSString *)sDate {
+    
     sqlite3_stmt    *statement;
     const char *dbpath = [databasePath UTF8String];
     if (sqlite3_open(dbpath, &zapisi) == SQLITE_OK)
@@ -369,6 +377,7 @@
         year++;
     }
     NSString *dateString = [NSString stringWithFormat:@"%ld.%02ld.%02ld.",year, monthl, day];
+    NSLog(@"weekday: %ld",[self weekInt:day month:monthl year:year]);
     //_dataLabel.text = dateString;
     NSInteger anIndex = 0; //stranica koja ce se otvoriti
     NSLog(@"INDEX: %ld",(long)anIndex);
@@ -384,13 +393,25 @@
             NSDate *d = [someArray objectAtIndex:i];
             NSLog(@"%@",d);
         }
-    }else {
+    } else {
         NSLog(@"to ima");
         anIndex=[someDate indexOfObject:dateString];
         
     }
     [self goToSecond:anIndex];
 }
+
+- (NSInteger)weekInt:(long)dayw month:(long)monthw year:(long)yearw {
+    NSDateComponents *comps = [[NSDateComponents alloc] init];          //start day
+    [comps setDay:dayw];
+    [comps setMonth:monthw];
+    [comps setYear:yearw];
+    NSCalendar *calendar = [NSCalendar currentCalendar];
+    NSDate *startDate = [calendar dateFromComponents:comps];
+    NSInteger weekInt = [calendar component:NSCalendarUnitWeekday fromDate:startDate];
+    return weekInt;
+}
+
 
 - (void)goToSecond:(NSInteger)selIndex {
     RootViewController *rvc=[self.storyboard instantiateViewControllerWithIdentifier: @"rootView"];
@@ -399,7 +420,7 @@
     
 }
 
--(void) ucitaj{
+-(void) ucitaj {
     const char *dbpath = [databasePath UTF8String];
     sqlite3_stmt    *statement;
     [someDate removeAllObjects];
